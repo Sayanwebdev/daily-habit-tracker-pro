@@ -31,100 +31,84 @@ A modern, feature-rich habit tracking application built with HTML, CSS (Tailwind
 2. **Add a Habit**: Click the "Add Habit" button to create a new habit
    - Enter habit name
    - Select a category
-   - Set daily/weekly goals
-   - Add an optional description
-3. **Track Daily**: Check off habits as you complete them each day
-4. **Monitor Progress**: View real-time statistics and charts
-5. **Manage Data**: Use Settings to export/import or clear data
+  ````markdown
+  # Daily Habit Tracker Pro
 
-## File Structure
+  A modern, feature-rich habit tracking web app built with HTML, Tailwind CSS, Chart.js, and vanilla JavaScript.
 
-```
-daily habit tracker pro/
-├── index.html       # Main application file (HTML, CSS, and JavaScript)
-└── README.md        # This file
-```
+  ## Overview
 
-## Technologies Used
+  Habit Tracker Pro helps users create, track, and analyze daily habits. Data is stored locally in the browser using `localStorage`. The app includes a dashboard, calendar view, streak tracking, and export/import backup features.
 
-- **HTML5**: Semantic markup structure
-- **Tailwind CSS**: Utility-first CSS framework via CDN
-- **Chart.js**: Data visualization for progress trends
-- **Vanilla JavaScript**: No frameworks; pure DOM manipulation
-- **localStorage API**: Client-side data persistence
+  ## What's Included (Updated)
 
-## Key Functions
+  - Responsive UI styled with Tailwind CSS
+  - Daily check-ins with visual feedback and streak indicators
+  - Real-time statistics and a 7-day progress chart (Chart.js)
+  - Calendar view showing daily completion percentages
+  - Categories and habit management (create/edit/delete)
+  - Export/Import JSON backup and clear data functionality
+  - Footer with contact details, website link, Privacy Policy, and Terms & Conditions
 
-### Data Management
-- `loadData()` - Load habits and check-ins from localStorage
-- `saveData()` - Save data to localStorage
+  ## New / Important Links
 
-### Rendering
-- `renderHabits()` - Display today's habits list
-- `renderCalendar()` - Display month calendar with completion indicators
-- `updateStats()` - Update statistics dashboard
-- `updateCategories()` - Update category summary
+  - **Website / Portfolio:** https://portfolio.sayan.qzz.io
+  - **Contact Email:** myself@sayan.qzz.io
+  - **Privacy Policy:** `privacy-policy.html`
+  - **Terms & Conditions:** `terms-conditions.html`
 
-### Habit Operations
-- `openHabitModal()` - Open add/edit habit dialog
-- `saveHabit(event)` - Save new or edited habit
-- `editHabit(habitId)` - Load habit into edit form
-- `deleteHabit(habitId)` - Remove habit and related data
-- `toggleHabit(habitId)` - Mark habit as completed/incomplete
+  ## How to Use
 
-### Analytics
-- `calculateStreak(habitId)` - Calculate current streak for a habit
-- `initProgressChart()` - Initialize Chart.js
-- `updateProgressChart()` - Update 7-day completion chart
+  1. Open `index.html` in your browser.
+  2. Add a habit using the "Add Habit" button.
+  3. Mark habits as done each day on the dashboard or calendar.
+  4. Use the Settings to export/import or clear your data.
 
-## Browser Compatibility
+  ## File Structure (project root)
 
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+  ```
+  daily habit tracker pro/
+  ├── index.html               # Main application (UI + logic)
+  ├── privacy-policy.html      # Privacy Policy page
+  ├── terms-conditions.html    # Terms & Conditions page
+  └── README.md                # Project documentation (this file)
+  ```
 
-## Tips
+  ## Configuration & Dependencies
 
-- **Backup Your Data**: Regularly export your data from Settings to ensure you don't lose progress
-- **Best Streak**: Your best streak is calculated across all habits
-- **Weekly Score**: Calculated as the average completion rate over the last 7 days
-- **Calendar Colors**:
-  - Green: 100% complete
-  - Blue: 75%+ complete
-  - Yellow: 50%+ complete
-  - Orange: 1-49% complete
-  - Gray: 0% complete
+  This project uses CDN-delivered assets; there is no build step required.
 
-## Troubleshooting
+  - Tailwind CSS: included via CDN
+  - Chart.js: included via CDN
 
-### Add Habit button not working
-1. Hard reload the browser: `Ctrl+F5` (Windows) or `Cmd+Shift+R` (Mac)
-2. Check browser console for errors: `F12` → Console tab
-3. Ensure JavaScript is enabled in your browser
+  ## Contact & Support
 
-### Data not saving
-- Check if localStorage is enabled in your browser settings
-- Try exporting your data before clearing browser data
-- Import exported data after clearing
+  If you find issues, need help, or have suggestions:
 
-### Chart not displaying
-- Ensure Chart.js CDN is accessible
-- Check browser console for network errors
+  - Email: `myself@sayan.qzz.io` (opens your default mail client)
+  - Website / Portfolio: https://portfolio.sayan.qzz.io
 
-## Future Enhancements
+  Please include any relevant console errors and a description of the problem.
 
-- Weekly/monthly habit patterns
-- Habit notes or journaling
-- Custom notifications/reminders
-- Dark mode theme
-- Multi-device synchronization
-- Social sharing features
+  ## Legal
 
-## License
+  This project now includes a Privacy Policy (`privacy-policy.html`) and Terms & Conditions (`terms-conditions.html`). The Privacy Policy explains how data is stored locally and what information may be collected automatically (browser and usage data). The Terms & Conditions cover permitted use, disclaimers, and liability limitations.
 
-This project is open source and available for personal use.
+  ## Notes & Tips
 
-## Support
+  - Your data is stored locally by default — export regularly using the Backup feature to keep copies.
+  - The app is not a substitute for professional medical, psychological, or health advice.
 
-For issues or suggestions, review your browser's developer console (F12) for error messages and ensure all CDN resources are loading correctly.
+  ## Future Improvements
+
+  - Dark mode
+  - Habit notes / journaling
+  - Reminders and notifications
+  - Optional cloud sync (requires user opt-in and secure backend)
+
+  ## License
+
+  This project is provided for personal use. Copy or adapt freely for your own non-commercial projects. If you plan to publish or distribute commercially, please contact the author.
+
+  ````
+
